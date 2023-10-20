@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.music-player{
+    background-color: rgba(0,0,0, 0.5);
+    /* background: wheat; */
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    /* height: 100px; */
+    border-radius: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+nav .nav-icon{
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: red;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.song-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.music-player h1{
+    font-size: 20px;
+    /* font-weight: 4000; */
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.music-player>p{
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: gray;
+    /* outline: 2px solid black; */
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    /* margin-top: 20px; */
+    cursor: pointer;
+}
+.controls div{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    font-size: 15px;
+    color: red;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px black;
+}
+.controls .mediaon{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: red;
+    box-shadow: 2px 2px 10px black;
+    color: black;
+}
